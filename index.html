@@ -1,17 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./assets/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Snippet Cheat Sheet</title>
-</head>
-<body>
-    <header class = "top">
-        <h1>CSS Snippet Cheatsheet</h1>
-        <p>
-            Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.
-        </p>
+  </head>
+  <body>
+    <header class="top">
+      <h1>CSS Snippet Cheatsheet</h1>
+      <p>
+        Ever have trouble recalling the exact syntax for your favorite CSS code?
+        Give it a permanent home and add it to this page! Select any snippet
+        below and it'll automatically select all of the code for you to copy.
+      </p>
     </header>
-</body>
+    <section class="flexrow">
+      <h1>FlexBox Row</h1>
+      <p>Use these properties to create a flexbox row layout</p>
+      <code>
+        .row { display:flex;<br />
+        flex-direction : row;<br />
+        flex-wrap: wrap; }
+      </code>
+    </section>
+    <section class="flexcolumn">
+      <h1>FlexBox Column</h1>
+      <p>Use these properties to create a flexbox Column layout</p>
+      <code>
+        .column { display:flex;<br />
+        flex-direction : column;<br />
+        }
+      </code>
+    </section>
+    <section class="grid">
+      <h1>CSS Grid layout</h1>
+      <p>Build a !2- Column using CSS grid</p>
+      <code>
+        .grid { display:grid;<br />
+        width:100% ; <br />
+        grid-templates-column: repeat(12,1fr); }
+      </code>
+    </section>
+    <section class="linear">
+      <h1>linear Gradients</h1>
+      <p>THis will create a background linear gradient from top to bottom</p>
+      <code>
+        .linear-gradient-background{ <br />
+        ( rgba(232,102,236,0.3)0%<br />
+        rgba(232,102,236,0.6)100% );<br />
+        }
+      </code>
+    </section>
+    <section class="glow">
+      <h1>Box Trasition Glow</h1>
+      <p>Use trasition and box shadows to glow on hover</p>
+      <code>
+        .code-card .card-header{<br />
+        border-radius: 8px;<br />
+        trasition: all 0.5 ease-in-out;<br />
+
+        <br />
+        <br />
+        .code-card:hover,<br />
+        .code-card:hover .code-header{<br />
+        box-shadow: inset 0px 0px 8px <br />
+        rgba(232,102,236,1),0 0 15px <br />rgba(232,102,236,1); } }
+      </code>
+    </section>
+    <section class="overlay">
+      <h1>Overplay Card with title</h1>
+      <p>
+        Use position properties and negatives margin to raise elements higher
+        than their natural statring point.
+      </p>
+      <code>
+        .card-header{<br />
+        position: relatives;<br />
+        margin-top: -20px;<br />
+
+        }
+      </code>
+    </section>
+  </body>
+
+  <footer>
+    <h1>Made with &#10084;&#65039; and CSS</h1>
+  </footer>
 </html>
