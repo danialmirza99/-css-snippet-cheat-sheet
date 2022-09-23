@@ -1,1 +1,1 @@
-# -css-snippet-cheat-sheet
+# css-snippet-cheat-sheet
